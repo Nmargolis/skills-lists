@@ -210,10 +210,9 @@ def mult_numbers(number_list):
         1
 
     """
-    product = 1
 
-    if number_list != []:
-        product = reduce(lambda x, y: x * y, number_list)
+    #if number_list != []:
+        product = reduce(lambda x, y: x * y, number_list, 1)
 
     return product
 
