@@ -282,6 +282,23 @@ def average(number_list):
 
 #     return ""
 
+    holding = range(len(list_of_words)*2 - 1)
+    answer = ""
+    counter = 0
+
+    for i in range(0, len(list_of_words), 1):
+        holding[counter] = list_of_words[i]
+        counter += 2
+
+    for j in range(1, len(holding) - 1, 2):
+        holding[j] = ", "
+
+    for element in holding:
+        answer += element
+
+    return answer
+
+
 # END OF ASSIGNMENT: You can ignore everything below.
 ##############################################################################
 
