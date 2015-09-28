@@ -212,7 +212,7 @@ def mult_numbers(number_list):
     """
 
     #if number_list != []:
-        product = reduce(lambda x, y: x * y, number_list, 1)
+    product = reduce(lambda x, y: x * y, number_list, 1)
 
     return product
 
@@ -265,22 +265,22 @@ def average(number_list):
 # Tip: To comment or uncomment blocks of code, highlight what you want to
 #    comment or uncomment, and then CMD+"/" or CTRL-"/"
 
-# def advanced_join_strings(list_of_words):
-#     """Return a single string with each word from the input list
-#     separated by a comma.
+def advanced_join_strings(list_of_words):
+    """Return a single string with each word from the input list
+    separated by a comma.
 
-#         >>> advanced_join_strings(["Labrador", "Poodle", "French Bulldog"])
-#         'Labrador, Poodle, French Bulldog'
+        >>> advanced_join_strings(["Labrador", "Poodle", "French Bulldog"])
+        'Labrador, Poodle, French Bulldog'
 
-#     If there's only one thing in the list, it should return just that
-#     thing, of course:
+    If there's only one thing in the list, it should return just that
+    thing, of course:
 
-#         >>> advanced_join_strings(["Pretzel"])
-#         'Pretzel'
+        >>> advanced_join_strings(["Pretzel"])
+        'Pretzel'
 
-#     """
+    """
 
-#     return ""
+    # Worked on this one with Dobs
 
     holding = range(len(list_of_words)*2 - 1)
     answer = ""
